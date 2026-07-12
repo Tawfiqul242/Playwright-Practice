@@ -1,0 +1,79 @@
+# ==========================================
+# Python
+# ==========================================
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+
+# Virtual Environments
+venv/
+.venv/
+env/
+ENV/
+
+# Environment Variables
+.env
+.env.*
+
+# ==========================================
+# Pytest
+# ==========================================
+.pytest_cache/
+.cache/
+
+# Coverage Reports
+.coverage
+coverage.xml
+htmlcov/
+
+# ==========================================
+# Playwright
+# ==========================================
+playwright-report/
+test-results/
+blob-report/
+
+# Screenshots and Videos (generated during test runs)
+test-results/**/*.png
+test-results/**/*.webm
+test-results/**/*.zip
+
+# Browser binaries (if installed locally)
+ms-playwright/
+
+# ==========================================
+# Logs
+# ==========================================
+*.log
+logs/
+*.tmp
+
+# ==========================================
+# IDEs and Editors
+# ==========================================
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# ==========================================
+# Operating System Files
+# ==========================================
+.DS_Store
+Thumbs.db
+
+# ==========================================
+# Build and Packaging
+# ==========================================
+build/
+dist/
+*.egg-info/
+.eggs/
+
+# ==========================================
+# Type Checking / Linters
+# ==========================================
+.mypy_cache/
+.ruff_cache/
+.pyre/
