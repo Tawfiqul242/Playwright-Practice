@@ -11,6 +11,7 @@ venv/
 .venv/
 env/
 ENV/
+practicePlay/
 
 # Environment Variables
 .env
