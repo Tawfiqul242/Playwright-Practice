@@ -6,11 +6,12 @@ from utils.json_read import load_json
 
 login_data = load_json("test_data/login_data.json")
 
-@pytest.mark.parametrize("data", login_data)
-def test_parametrize_with_json(page, data):
+@pytest.mark.parametrize(
+        "username, password",
+        [(d["username"], d["password"]) for d in login_data]
+)
+def test_parametrize_with_json(page, username, password):
 
-    username = data["username"]
-    password = data["password"]
 
     page.goto("https://opensource-demo.orangehrmlive.com/web/index.php/auth/login")
    
